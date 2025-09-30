@@ -47,3 +47,27 @@ echo "🧪 Running automatic scan on /home ..."
 clamscan -r --bell -i /home
 
 echo "✅ ClamAV reinstallation and scan complete!"
+```
+## ▶️ Usage
+```bash
+nano reinstall_clamav.sh      # Create script file
+chmod +x reinstall_clamav.sh  # Make it executable
+./reinstall_clamav.sh         # Run it
+
+```
+
+## 📝 Notes
+
+- `--bell` → plays sound if malware is found
+
+- `-i ` → shows only infected files (hides clean ones)
+
+- Change `/home` → to `/var/www` or `/` to scan other paths
+
+- To save results into a log file, modify last line like this:
+
+```bash
+clamscan -r --bell -i /home | tee /var/log/clamav/scan_results.log
+
+``
+
