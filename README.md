@@ -69,5 +69,5 @@ chmod +x reinstall_clamav.sh  # Make it executable
 ```bash
 clamscan -r --bell -i /home | tee /var/log/clamav/scan_results.log
 
-``
+```
 
