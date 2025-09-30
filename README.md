@@ -14,7 +14,7 @@ This script will:
 ```bash
 #!/bin/bash
 # ClamAV Full Reset, Reinstall & Auto Scan Script for Ubuntu
-# Author: Chamnan
+# Author: Chamnan dev
 
 echo "🛑 Stopping ClamAV services..."
 sudo systemctl stop clamav-freshclam 2>/dev/null
